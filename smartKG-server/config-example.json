@@ -1,0 +1,33 @@
+{
+  "title": "My Linked Data Fragments server",
+
+  "metadatapath": "/WebContent/WEB-INF/watdiv/statsPart_watdiv100M.json",
+  "moleculesdatapath": "/libhdt/data/part_families_watdiv_100M/hdt/",
+  "datasourcetypes": {
+    "HdtDatasource"       : "org.linkeddatafragments.datasource.hdt.HdtDataSourceType",
+    "JenaTDBDatasource"   : "org.linkeddatafragments.datasource.tdb.JenaTDBDataSourceType"
+  },
+
+  "datasources": {
+    "watdiv": {
+      "title": "watdiv",
+      "type": "HdtDatasource",
+      "description": "WatDiv DataSet with an HDT back-end",
+      "settings": { "file": "/data/watdiv.100M.hdt" }
+    }
+
+  },
+
+  "prefixes": {
+    "rdf":         "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs":        "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd":         "http://www.w3.org/2001/XMLSchema#",
+    "dc":          "http://purl.org/dc/terms/",
+    "foaf":        "http://xmlns.com/foaf/0.1/",
+    "dbpedia":     "http://dbpedia.org/resource/",
+    "dbpedia-owl": "http://dbpedia.org/ontology/",
+    "dbpprop":     "http://dbpedia.org/property/",
+    "hydra":       "http://www.w3.org/ns/hydra/core#",
+    "void":        "http://rdfs.org/ns/void#"
+  }
+}
